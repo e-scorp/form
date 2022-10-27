@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>survey form</title>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <header>
+            <h1 id="title">Product Customer Feedback Form </h1>
+            <p id="description">Thank you for taking time to provide feedback. We appreciate hearing from you and will
+                review your comments carefully.</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="sub-container"><label id="name-label">Name</label>
+                <input class="input-field" id="name" type="name" placeholder="Enter your name" required>
+            </div>
+            <div class="sub-container"><label id="email-label">Email</label>
+                <input class="input-field" id="email" type="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="sub-container"><label id="number-label">Age</label>
+                <input class="input-field" id="number" type="number" min="13" max="120" placeholder="Enter your Age"
+                    required>
+            </div>
+            <div class="sub-container">
+                <p class="text">How long have you been using this product:</p>
+                <select id="dropdown" class="input-field">
+                    <option>select one option</option>
+                    <option>1 month</option>
+                    <option>3 month</option>
+                    <option>i am not a user of product</option>
+                </select>
+            </div>
+            <div class="sub-container">
+                <p class="text">Would you recommend it to your friends and colleagues?</p>
+                <div class="reffer-option"><input type="radio" name="recommend" value="yes" checked> Yes</div>
+                <div class="reffer-option"><input type="radio" name="recommend" value="no"> No</div>
+                <div class="reffer-option"><input type="radio" name="recommend" value="not-sure"> Not sure</div>
+            </div>
+            <div class="sub-container">
+                <p class="text">What purpose did you buy your mobile phone case for? <span>(Multiple answers allowed)</span></p>
+                <div class="feedback"><input class="checkbox-option" type="checkbox" value="fashion">Fashion</div>
+                <div class="feedback"><input class="checkbox-option" type="checkbox" value="impact-protection">Impact
+                    Protection</div>
+                <div class="feedback"><input class="checkbox-option" type="checkbox" value="water-proofing">Water
+                    Proofing</div>
+                <div class="feedback"><input class="checkbox-option" type="checkbox" value="audio-enhancement">Audio
+                    Enhancement</div>
+                <div class="feedback"><input class="checkbox-option" type="checkbox"
+                        value="built-in-screenguard">Built-in ScreenGuard</div>
+                <div class="feedback"><input class="checkbox-option" type="checkbox"
+                        value="additional-storage">Additional Storage</div>
+                <div class="feedback"><input class="checkbox-option" type="checkbox" value="none">None of the above
+                </div>
+            </div>
+            <div class="sub-container">
+                <p class="text">Do you have any suggestions to improve our product and service?</p>
+                <textarea></textarea>
+            </div>
+            <div class="sub-container">
+                <button id="submit">Submmit</button>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
